@@ -1,5 +1,6 @@
 import numpy as np
 
+# funcion para aumentar el contraste
 def contraste(imagen):
   (f, c) = imagen.shape
   persona_contraste = np.zeros((f, c))

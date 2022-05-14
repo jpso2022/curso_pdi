@@ -2,7 +2,6 @@ import math
 import numpy as np
 
 def dilatacion(imagen_gris, elemento_estructural):
-    elemento_estructural = np.ones((3, 3), np.uint8)
     (fs, cs) = elemento_estructural.shape
     fss = fs/2
     css = cs/2

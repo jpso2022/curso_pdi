@@ -27,10 +27,10 @@ def dilatacion(imagen_gris, elemento_estructural):
     dilat = np.zeros((fi, ci), np.uint8)
     # Aplicar la tecnica de dilatacion
     for i in range(0, fi):
-    for j in range(0, ci):
-        # Es una porción segun el elemento estructural
-        I1 = imagen_ampliada[i:fs+i,j:cs+j]
-        I2 = I1*elemento_estructural
-        dilat[i][j] = I2.max()
+        for j in range(0, ci):
+            # Es una porción segun el elemento estructural
+            I1 = imagen_ampliada[i:fs+i,j:cs+j]
+            I2 = I1*elemento_estructural
+            dilat[i][j] = I2.max()
         
     return dilat

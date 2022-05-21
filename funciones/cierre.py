@@ -1,4 +1,4 @@
-from dilatacion import dilatacion
+from curso_pdi.funciones.dilatacion import dilatacion
 from curso_pdi.funciones.erosion import erosion
 
 def cierre(imagen, elemento_estructural):

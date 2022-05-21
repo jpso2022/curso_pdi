@@ -1,5 +1,5 @@
-from dilatacion import dilatacion
-from erosion import erosion
+from curso_pdi.funciones.dilatacion import dilatacion
+from curso_pdi.funciones.erosion import erosion
 
 def apertura(imagen, elemento_estructural):
   imagen_erosionada = erosion(imagen, elemento_estructural)

@@ -1,8 +1,9 @@
 import math
+import numpy as np
 
 def eliminar_valores_extremos(binario, centroide, umbral):
     [f, c] = binario.shape
-    resultado = np.zeros(binario.shape)
+    resultado = np.zeros(binario.shape, np.uint8)
     for i in range(0, f):
         for j in range(0, c):
             if binario[i][j] == 1:

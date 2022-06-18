@@ -3,7 +3,7 @@ import numpy as np
 
 def eliminar_valores_extremos(binario, centroide, umbral):
     [f, c] = binario.shape
-    resultado = np.zeros(binario.shape, np.uint8)
+    resultado = binario.copy()
     for i in range(0, f):
         for j in range(0, c):
             if resultado[i][j] == 1:

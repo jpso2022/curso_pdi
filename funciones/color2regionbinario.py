@@ -1,4 +1,5 @@
 import numpy as np
+import cv2
 
 def color2regionbinario(imagen, imagen_procesada):
     imagen_rgb = cv2.cvtColor(imagen, cv2.COLOR_BGR2RGB)
